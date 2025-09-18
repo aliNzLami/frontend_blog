@@ -5,6 +5,7 @@ import './assets/style/main.css';
 
 // Context
 import { RoutesList } from './assets/context/RoutesList';
+import Footer from './assets/components/CorePanel/Footer';
 
 // GSAP
 // import gsap from 'gsap';
@@ -33,6 +34,8 @@ function App() {
             }
           </Route>
         </Routes>
+
+        <Footer />
       </main>
   )
 }
