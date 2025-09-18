@@ -13,7 +13,7 @@ const RoutesListProvider = (props) => {
         webpackInVanillaJS: { 
             title: "Webpack for Vannila JS Project", 
             subTitle: "How to config Webpack for a no-framework project (Pure JS)",
-            time: '10 min', 
+            time: '10', 
             url: "/webpackInVanillaJS", 
             element: <WebpackInVanillaJS /> 
         },
