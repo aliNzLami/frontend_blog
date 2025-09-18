@@ -5,6 +5,7 @@ import search from "../../pics/search.png";
 
 // Context
 import { RoutesList } from '../../context/RoutesList';
+import { TagsList } from '../../context/TagsList';
 
 // Components
 import Card from '../../components/Card';
@@ -21,6 +22,7 @@ function HomeArticlesList() {
     
     // ------------------------ Context ------------------------ //
     const routesList = useContext(RoutesList);
+    const tagsList = useContext(TagsList);
 
 
     // ------------------------ Functions ------------------------ //
@@ -53,7 +55,6 @@ function HomeArticlesList() {
         }
     }
 
-
     // ------------------------ Effects ------------------------ //
     useEffect(() => {
         setTimeout(() => {
@@ -84,7 +85,7 @@ function HomeArticlesList() {
                                 articles.map( (article) => {
                                 return (
                                     <Link to={article.url} className='card' key={article.title}>
-                                        <Card data={article} />
+                                        <Card tag={tagsList[article.tag]} data={article} />
                                     </Link>
                                 )
                             } )

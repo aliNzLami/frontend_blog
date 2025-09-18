@@ -186,39 +186,38 @@ input {
 .articlesContainer {
     margin-top: 40px;
     display: flex;
-    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 20px;
 }
 
 .card {
     height: 300px;
-    width: 25%;
+    width: 20%;
     border-bottom: none;
     padding: 20px;
-    box-shadow: 1px 1px 1px 1px var(--main-gray);
     border: 1px solid var(--main-gray);
     border-radius: 10px;
+    transition: 0.5s;
 }
 
-@media (max-width: 1024px) {
+.card:hover {
+    box-shadow: 1px 1px 1px 1px var(--main-gray);
+}
+
+@media (max-width: 1264px) {
     .card {
-        width: 30%;
+        width: 25%;
     }
 }
 
-@media (max-width: 960px) {
-    .card {
-        width: 50%;
-    }
-}
-
-@media (max-width: 768px) {
+@media (max-width: 830px) {
     .card {
         width: 100%;
     }
 }
 
 .cardBox {
-    
     width: 100%;
     height: 100%;
     display: flex;
@@ -228,14 +227,30 @@ input {
 
 .cardBox h4 {
     font-size: 25px;
+    transition: 0.5s;
+}
+
+.cardBox:hover h4 {
+    color: #fff;
 }
 
 .cardBox p {
     font-size: 20px;
     margin-top: 25px;
+    transition: 0.5s;
+}
+
+.cardBox:hover p {
+    font-weight: bolder;
 }
 
 .cardBox span {
     font-size: 16px;
     color: var(--main-yello);
+}
+
+.footerCard {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }

@@ -1,0 +1,22 @@
+import React, { createContext } from "react";
+
+import webpack_icon from "../pics/webpack-icon.svg";
+import js_icon from "../pics/js-icon.svg";
+
+
+export const TagsList = createContext();
+
+const TagsListProvider = (props) => {
+    const tagsList = {
+        webpack: webpack_icon,
+        js: js_icon,
+    };
+
+    return (
+        <TagsList.Provider value={tagsList}>
+            {props.children}
+        </TagsList.Provider>
+    );
+};
+
+export default TagsListProvider;

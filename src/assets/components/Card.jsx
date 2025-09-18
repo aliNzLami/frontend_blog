@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Card({data}) {
+function Card({tag, data}) {
 
     return (
       <div className='cardBox'>
@@ -12,9 +12,18 @@ function Card({data}) {
             { data?.subTitle??"" }
           </p>
         </div>
-        <span className='dBlock normal-font main-gray'>
-          { data?.time??"" } min
-        </span>
+        <div className='footerCard'>
+          <span className='dBlock normal-font main-gray'>
+            { data?.time??"" } min
+          </span>
+          {
+            tag 
+            ?
+              <img width={20} src={tag} alt={`${data?.tag??""} icon`} />
+            : 
+              ""
+          }
+        </div>
       </div>
     )
 }
