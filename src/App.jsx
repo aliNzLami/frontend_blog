@@ -1,34 +1,39 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React, { useContext } from 'react';
+import {Routes, Route} from "react-router";
+
+import './assets/style/main.css';
+
+// Context
+import { RoutesList } from './assets/context/RoutesList';
+
+// GSAP
+// import gsap from 'gsap';
+// import { ScrollTrigger } from 'gsap/all';
+// gsap.registerPlugin(ScrollTrigger);
 
 function App() {
-  const [count, setCount] = useState(0)
+
+  const routesList = useContext(RoutesList);
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+      <main>
+        <div className='wholeMain' />
+
+        <Routes>
+          <Route key="blog">
+            {
+              routesList
+              &&
+              Object.entries(routesList).map( (route) => {
+                // route --> ['home', {…}] 
+                return (
+                  <Route key={route[0]} path={route[1].url} element={route[1].element} />
+                )
+              } )
+            }
+          </Route>
+        </Routes>
+      </main>
   )
 }
 
