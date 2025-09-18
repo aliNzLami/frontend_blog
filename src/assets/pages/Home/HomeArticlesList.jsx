@@ -1,5 +1,8 @@
 import React, { useContext, useEffect, useState } from 'react';
 
+// router
+import { Link, useNavigate } from 'react-router-dom';
+
 // icon
 import search from "../../pics/search.png";
 
@@ -10,11 +13,12 @@ import { TagsList } from '../../context/TagsList';
 // Components
 import Card from '../../components/Card';
 import Loading from '../../components/Loading';
-import { Link } from 'react-router-dom';
 
 
 
 function HomeArticlesList() {
+
+    const navigate = useNavigate();
 
     // ------------------------ State ------------------------ //
     const [articles, setArticles] = useState(null);
@@ -55,6 +59,14 @@ function HomeArticlesList() {
         }
     }
 
+    const onClickHandler = (article) => {
+        const { title, subTitle, time, date } = article;
+        localStorage.setItem('article', JSON.stringify({
+            title, subTitle, time, date
+        }))
+        navigate(article.url)
+    }
+
     // ------------------------ Effects ------------------------ //
     useEffect(() => {
         setTimeout(() => {
@@ -84,9 +96,9 @@ function HomeArticlesList() {
                             ?
                                 articles.map( (article) => {
                                 return (
-                                    <Link to={article.url} className='card' key={article.title}>
+                                    <div onClick={() => onClickHandler(article)} className='card' key={article.title}>
                                         <Card tag={tagsList[article.tag]} data={article} />
-                                    </Link>
+                                    </div>
                                 )
                             } )
                             :

@@ -29,7 +29,7 @@ function Footer() {
                 {
                     contact.map(item => {
                         return(
-                            <a target='_blank' href={item.link}>
+                            <a key={item.title} target='_blank' href={item.link}>
                                 { item.title }
                             </a>
                         )
