@@ -12,6 +12,10 @@
     --main-gray: rgb(130, 152, 176);
 }
 
+body {
+    background-color: rgb(6, 11, 17);
+}
+
 main {
     padding: 1rem 70px;
 }
