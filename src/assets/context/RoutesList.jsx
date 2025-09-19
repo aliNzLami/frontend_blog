@@ -3,6 +3,7 @@ import React, { createContext } from "react";
 import Home from '../pages/Home/Home';
 const ImgRatio = React.lazy(() => import("../pages/Articles/ImgRatio/ImgRatio"))
 const MapArray = React.lazy(() => import("../pages/Articles/MapArray/MapArray"))
+const ViteAndCRA = React.lazy(() => import("../pages/Articles/ViteAndCRA/ViteAndCRA"))
 
 
 export const RoutesList = createContext();
@@ -29,6 +30,16 @@ const RoutesListProvider = (props) => {
             tag: 'js',
             date:{year: 2025, month: 'Sep', day: '23'},
             element: <MapArray /> 
+        },
+
+        viteWebpack: { 
+            title: "Vite vs Webpack", 
+            subTitle: "My personal opinion about these two bundlers",
+            time: '2', 
+            url: "/vitevswebpack", 
+            tag: 'js',
+            date:{year: 2025, month: 'Sep', day: '23'},
+            element: <ViteAndCRA /> 
         },
     };
 
