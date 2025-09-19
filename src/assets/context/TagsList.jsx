@@ -3,6 +3,7 @@ import React, { createContext } from "react";
 import webpack_icon from "../pics/webpack-icon.svg";
 import js_icon from "../pics/js-icon.svg";
 import css_icon from "../pics/css-icon.svg";
+import github_icon from "../pics/github-iocn.png";
 
 
 export const TagsList = createContext();
@@ -12,6 +13,7 @@ const TagsListProvider = (props) => {
         webpack: webpack_icon,
         js: js_icon,
         css: css_icon,
+        github: github_icon,
     };
 
     return (

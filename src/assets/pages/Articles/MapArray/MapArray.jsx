@@ -28,7 +28,7 @@ function MapArray() {
         <Centered>
             <img 
                 src={code} 
-                className='rounded-10 dBlock mb-50'
+                className='rounded-10 dBlock mb-50 fullImgMobile'
                 alt="js code" 
             />
         </Centered>

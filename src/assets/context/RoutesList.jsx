@@ -4,6 +4,7 @@ import Home from '../pages/Home/Home';
 const ImgRatio = React.lazy(() => import("../pages/Articles/ImgRatio/ImgRatio"))
 const MapArray = React.lazy(() => import("../pages/Articles/MapArray/MapArray"))
 const ViteAndCRA = React.lazy(() => import("../pages/Articles/ViteAndCRA/ViteAndCRA"))
+const RoutingGitHubPages = React.lazy(() => import("../pages/Articles/RoutingGitHubPages/RoutingGitHubPages"))
 
 
 export const RoutesList = createContext();
@@ -40,6 +41,16 @@ const RoutesListProvider = (props) => {
             tag: 'js',
             date:{year: 2025, month: 'Sep', day: '23'},
             element: <ViteAndCRA /> 
+        },
+
+        routingGitHub: { 
+            title: "Routing on GitHub Pages", 
+            subTitle: "Routing on GitHub Pages is challenging, but there's a solution.",
+            time: '5', 
+            url: "/routing-githubpages", 
+            tag: 'github',
+            date:{year: 2025, month: 'Sep', day: '23'},
+            element: <RoutingGitHubPages /> 
         },
     };
 

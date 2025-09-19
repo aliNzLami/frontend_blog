@@ -26,7 +26,10 @@ function ImgRatio() {
         </p>
 
         <Centered>
-          <img src={imgRatio} className='rounded-10 block mb-20' alt="image ratio code" />
+          <img 
+          src={imgRatio} 
+          className='rounded-10 dBlock mb-50 fullImgMobile'
+          lt="image ratio code" />
         </Centered>
         
     </div>
