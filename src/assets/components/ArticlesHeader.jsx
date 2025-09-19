@@ -1,9 +1,17 @@
 import React, { useEffect } from 'react'
 import { useNavigate } from 'react-router-dom';
 
-function ArticlesHeader({data}) {
+const getData = () => {
+  let data = localStorage.getItem('article');
+  data = JSON.parse(data);
+  return data;
+}
+
+function ArticlesHeader() {
   
     const navigate = useNavigate();
+
+    const data = getData();
 
     const backHome = () => {
       localStorage.removeItem('article');

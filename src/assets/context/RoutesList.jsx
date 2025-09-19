@@ -1,7 +1,7 @@
 import React, { createContext } from "react";
 
 import Home from '../pages/Home/Home';
-const WebpackInVanillaJS = React.lazy(() => import('../../assets/pages/Articles/WebpackInVanillaJS'))
+const ImgRatio = React.lazy(() => import("../pages/Articles/ImgRatio/ImgRatio"))
 
 
 export const RoutesList = createContext();
@@ -10,14 +10,14 @@ const RoutesListProvider = (props) => {
     const routesList = {
         home: { url: "/", element: <Home /> },
         
-        webpackInVanillaJS2: { 
-            title: "Webpack for Vannila JS Project", 
-            subTitle: "How to config Webpack for a no-framework project (Pure JS)",
-            time: '10', 
-            url: "/webpackInVanillaJS", 
-            tag: 'js',
-            date:{year: 2025, month: 'Jul', day: '11'},
-            element: <WebpackInVanillaJS /> 
+        imgRatio: { 
+            title: "Image Ratio", 
+            subTitle: "A formula for image sizes to use everywhere.",
+            time: '5', 
+            url: "/imgRatio", 
+            tag: 'css',
+            date:{year: 2025, month: 'Sep', day: '23'},
+            element: <ImgRatio /> 
         },
     };
 
