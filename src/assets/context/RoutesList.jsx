@@ -6,6 +6,7 @@ const MapArray = React.lazy(() => import("../pages/Articles/MapArray/MapArray"))
 const ViteAndCRA = React.lazy(() => import("../pages/Articles/ViteAndCRA/ViteAndCRA"))
 const RoutingGitHubPages = React.lazy(() => import("../pages/Articles/RoutingGitHubPages/RoutingGitHubPages"))
 const BadIdeaMathRandom = React.lazy(() => import("../pages/Articles/BadIdeaMathRandom/BadIdeaMathRandom"))
+const GitBranchProblem = React.lazy(() => import("../pages/Articles/GitBranchProblem/GitBranchProblem"))
 
 
 export const RoutesList = createContext();
@@ -62,6 +63,16 @@ const RoutesListProvider = (props) => {
             tag: 'react',
             date:{year: 2025, month: 'Sep', day: '23'},
             element: <BadIdeaMathRandom /> 
+        },
+
+        gitBranchProblem: { 
+            title: "fatal: Not a valid object name: 'master'", 
+            subTitle: "Bad, on nerve, and exhausting error you could see from Git",
+            time: '3', 
+            url: "/git-branch-problem", 
+            tag: 'github',
+            date:{year: 2025, month: 'Sep', day: '23'},
+            element: <GitBranchProblem /> 
         },
     };
 

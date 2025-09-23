@@ -15,7 +15,7 @@ function Footer() {
 
         {
             title: 'Email',
-            link: 'ali.nabizadeh79@yahoo.com'
+            link: 'mailto:ali.nabizadeh79@yahoo.com'
         },
 
         {
