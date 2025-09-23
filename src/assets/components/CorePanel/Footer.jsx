@@ -5,17 +5,17 @@ function Footer() {
     const contact = [
         {
             title: 'About',
-            link: ''
+            link: 'https://alinzlami.github.io/aliLamiry-portfolio/'
         },
 
         {
             title: 'GitHub',
-            link: ''
+            link: 'https://github.com/aliNzLami'
         },
 
         {
             title: 'Email',
-            link: ''
+            link: 'ali.nabizadeh79@yahoo.com'
         },
 
         {

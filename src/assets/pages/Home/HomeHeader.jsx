@@ -19,7 +19,7 @@ function HomeHeader() {
         </h2>
 
         <h3 className='whoAmI'>
-          <a href="">
+          <a href="https://alinzlami.github.io/aliLamiry-portfolio/">
             wH0 aM i ؟
           </a>
         </h3>
