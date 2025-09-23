@@ -7,6 +7,7 @@ const ViteAndCRA = React.lazy(() => import("../pages/Articles/ViteAndCRA/ViteAnd
 const RoutingGitHubPages = React.lazy(() => import("../pages/Articles/RoutingGitHubPages/RoutingGitHubPages"))
 const BadIdeaMathRandom = React.lazy(() => import("../pages/Articles/BadIdeaMathRandom/BadIdeaMathRandom"))
 const GitBranchProblem = React.lazy(() => import("../pages/Articles/GitBranchProblem/GitBranchProblem"))
+const ReduxNextJS = React.lazy(() => import("../pages/Articles/ReduxNextJS/ReduxNextJS"))
 
 
 export const RoutesList = createContext();
@@ -73,6 +74,16 @@ const RoutesListProvider = (props) => {
             tag: 'github',
             date:{year: 2025, month: 'Sep', day: '23'},
             element: <GitBranchProblem /> 
+        },
+
+        reduxNextJS: { 
+            title: "Redux Toolkit in Next.js", 
+            subTitle: "I will explain Redux Toolkit architecture and usage in Next.js",
+            time: '7', 
+            url: "/redux-nextjs", 
+            tag: 'next',
+            date:{year: 2025, month: 'Sep', day: '23'},
+            element: <ReduxNextJS /> 
         },
     };
 
