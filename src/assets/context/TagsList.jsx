@@ -4,6 +4,7 @@ import webpack_icon from "../pics/webpack-icon.svg";
 import js_icon from "../pics/js-icon.svg";
 import css_icon from "../pics/css-icon.svg";
 import github_icon from "../pics/github-iocn.png";
+import react_icon from "../pics/react-icon.svg";
 
 
 export const TagsList = createContext();
@@ -14,6 +15,7 @@ const TagsListProvider = (props) => {
         js: js_icon,
         css: css_icon,
         github: github_icon,
+        react: react_icon,
     };
 
     return (

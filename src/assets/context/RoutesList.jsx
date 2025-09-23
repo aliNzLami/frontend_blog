@@ -5,6 +5,7 @@ const ImgRatio = React.lazy(() => import("../pages/Articles/ImgRatio/ImgRatio"))
 const MapArray = React.lazy(() => import("../pages/Articles/MapArray/MapArray"))
 const ViteAndCRA = React.lazy(() => import("../pages/Articles/ViteAndCRA/ViteAndCRA"))
 const RoutingGitHubPages = React.lazy(() => import("../pages/Articles/RoutingGitHubPages/RoutingGitHubPages"))
+const BadIdeaMathRandom = React.lazy(() => import("../pages/Articles/BadIdeaMathRandom/BadIdeaMathRandom"))
 
 
 export const RoutesList = createContext();
@@ -51,6 +52,16 @@ const RoutesListProvider = (props) => {
             tag: 'github',
             date:{year: 2025, month: 'Sep', day: '23'},
             element: <RoutingGitHubPages /> 
+        },
+
+        mathRandom_badIdea: { 
+            title: "Math.Random() Is a Bad Idea", 
+            subTitle: "If you are using math.random() in your JSX file, you are in trouble",
+            time: '7', 
+            url: "/mathRandom_badIdea", 
+            tag: 'react',
+            date:{year: 2025, month: 'Sep', day: '23'},
+            element: <BadIdeaMathRandom /> 
         },
     };
 
