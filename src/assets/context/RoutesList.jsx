@@ -10,6 +10,7 @@ const GitBranchProblem = React.lazy(() => import("../pages/Articles/GitBranchPro
 const ReduxNextJS = React.lazy(() => import("../pages/Articles/ReduxNextJS/ReduxNextJS"))
 const FastestOptimising = React.lazy(() => import("../pages/Articles/FastestOptimising/FastestOptimising"))
 const GithubDeploymentError = React.lazy(() => import("../pages/Articles/GithubDeploymentError/GithubDeploymentError"))
+const VideosNextJS = React.lazy(() => import("../pages/Articles/VideosNextJS/VideosNextJS"))
 
 
 export const RoutesList = createContext();
@@ -106,6 +107,16 @@ const RoutesListProvider = (props) => {
             tag: 'github',
             date:{year: 2025, month: 'Sep', day: '28'},
             element: <GithubDeploymentError /> 
+        },
+
+        VideosNextJS: { 
+            title: "Videos in Next.js", 
+            subTitle: "How to import videos to Next.js environment?",
+            time: '3', 
+            url: "/videos-nextjs", 
+            tag: 'next',
+            date:{year: 2025, month: 'Sep', day: '28'},
+            element: <VideosNextJS /> 
         },
     };
 
