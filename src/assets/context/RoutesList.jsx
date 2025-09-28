@@ -9,6 +9,7 @@ const BadIdeaMathRandom = React.lazy(() => import("../pages/Articles/BadIdeaMath
 const GitBranchProblem = React.lazy(() => import("../pages/Articles/GitBranchProblem/GitBranchProblem"))
 const ReduxNextJS = React.lazy(() => import("../pages/Articles/ReduxNextJS/ReduxNextJS"))
 const FastestOptimising = React.lazy(() => import("../pages/Articles/FastestOptimising/FastestOptimising"))
+const GithubDeploymentError = React.lazy(() => import("../pages/Articles/GithubDeploymentError/GithubDeploymentError"))
 
 
 export const RoutesList = createContext();
@@ -95,6 +96,16 @@ const RoutesListProvider = (props) => {
             tag: 'react',
             date:{year: 2025, month: 'Sep', day: '28'},
             element: <FastestOptimising /> 
+        },
+
+        GithubDeploymentError: { 
+            title: "GitHub Pages: Deployment Error", 
+            subTitle: "You say npm run deploy, but it says failed to connect.",
+            time: '3', 
+            url: "/error-deployment-githubpages", 
+            tag: 'github',
+            date:{year: 2025, month: 'Sep', day: '28'},
+            element: <GithubDeploymentError /> 
         },
     };
 
