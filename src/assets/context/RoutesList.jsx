@@ -120,7 +120,7 @@ const RoutesListProvider = (props) => {
             element: <VideosNextJS /> 
         },
 
-        VideosNextJS: { 
+        ImagesThreeJS: { 
             title: "Images in Three.js", 
             subTitle: "How can you use an image on a surface?",
             time: '7', 
