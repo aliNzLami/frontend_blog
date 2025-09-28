@@ -11,6 +11,7 @@ const ReduxNextJS = React.lazy(() => import("../pages/Articles/ReduxNextJS/Redux
 const FastestOptimising = React.lazy(() => import("../pages/Articles/FastestOptimising/FastestOptimising"))
 const GithubDeploymentError = React.lazy(() => import("../pages/Articles/GithubDeploymentError/GithubDeploymentError"))
 const VideosNextJS = React.lazy(() => import("../pages/Articles/VideosNextJS/VideosNextJS"))
+const ImagesThreeJS = React.lazy(() => import("../pages/Articles/ImagesThreeJS/ImagesThreeJS"))
 
 
 export const RoutesList = createContext();
@@ -117,6 +118,16 @@ const RoutesListProvider = (props) => {
             tag: 'next',
             date:{year: 2025, month: 'Sep', day: '28'},
             element: <VideosNextJS /> 
+        },
+
+        VideosNextJS: { 
+            title: "Images in Three.js", 
+            subTitle: "How can you use an image on a surface?",
+            time: '7', 
+            url: "/images-three", 
+            tag: 'three',
+            date:{year: 2025, month: 'Sep', day: '28'},
+            element: <ImagesThreeJS /> 
         },
     };
 

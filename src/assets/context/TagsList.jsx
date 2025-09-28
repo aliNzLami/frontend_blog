@@ -6,6 +6,7 @@ import css_icon from "../pics/css-icon.svg";
 import github_icon from "../pics/github-iocn.png";
 import react_icon from "../pics/react-icon.svg";
 import next_icon from "../pics/next-icon.svg";
+import three_icon from "../pics/three.jpg";
 
 
 export const TagsList = createContext();
@@ -18,6 +19,7 @@ const TagsListProvider = (props) => {
         github: github_icon,
         react: react_icon,
         next: next_icon,
+        three: three_icon,
     };
 
     return (
