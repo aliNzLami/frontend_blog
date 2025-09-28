@@ -8,6 +8,7 @@ const RoutingGitHubPages = React.lazy(() => import("../pages/Articles/RoutingGit
 const BadIdeaMathRandom = React.lazy(() => import("../pages/Articles/BadIdeaMathRandom/BadIdeaMathRandom"))
 const GitBranchProblem = React.lazy(() => import("../pages/Articles/GitBranchProblem/GitBranchProblem"))
 const ReduxNextJS = React.lazy(() => import("../pages/Articles/ReduxNextJS/ReduxNextJS"))
+const FastestOptimising = React.lazy(() => import("../pages/Articles/FastestOptimising/FastestOptimising"))
 
 
 export const RoutesList = createContext();
@@ -84,6 +85,16 @@ const RoutesListProvider = (props) => {
             tag: 'next',
             date:{year: 2025, month: 'Sep', day: '23'},
             element: <ReduxNextJS /> 
+        },
+
+        fastOptimise: { 
+            title: "Fastest Way to Optimise Your Web App", 
+            subTitle: "Before you go on hard refactoring phase, you can follow these steps",
+            time: '5', 
+            url: "/fast-optimise", 
+            tag: 'react',
+            date:{year: 2025, month: 'Sep', day: '28'},
+            element: <FastestOptimising /> 
         },
     };
 
