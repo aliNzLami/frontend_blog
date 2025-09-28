@@ -3,10 +3,11 @@ import carousel from './carousel.PNG';
 import carousel_mobile from './carousel-mobile.PNG';
 import imgRatio from './imgRatio.PNG';
 import Centered from '../../../components/Centered';
+import Pic from '../../../components/Pic';
 
 function ImgRatio() {
   return (
-    <div>
+    <>
         <ArticlesHeader />
 
         <p className='artcileParagraph mb-50'>
@@ -25,14 +26,8 @@ function ImgRatio() {
           Well, this is the formula that my dear mentor taught me:
         </p>
 
-        <Centered>
-          <img 
-          src={imgRatio} 
-          className='rounded-10 dBlock mb-50 fullImgMobile'
-          lt="image ratio code" />
-        </Centered>
-        
-    </div>
+        <Pic src={imgRatio} alt={'image ratio code'} />
+    </>
   )
 }
 

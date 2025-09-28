@@ -1,6 +1,6 @@
 import React from 'react'
 import ArticlesHeader from '../../../components/ArticlesHeader'
-import Centered from '../../../components/Centered'
+import Pic from '../../../components/Pic'
 import hash from './hash.PNG'
 
 function RoutingGitHubPages() {
@@ -56,13 +56,7 @@ function RoutingGitHubPages() {
             </p>
         </div>
 
-        <Centered>
-            <img 
-                src={hash} 
-                className='rounded-10 dBlock mb-50 fullImgMobile'
-                alt="js code" 
-            />
-        </Centered>
+        <Pic src={hash} alt={'js code'} />
 
         <div className='artcileParagraph mb-50'>
             <p>

@@ -1,5 +1,6 @@
 import ArticlesHeader from '../../../components/ArticlesHeader'
 import Centered from '../../../components/Centered'
+import Pic from '../../../components/Pic';
 import code from './code.PNG';
 
 function MapArray() {
@@ -25,13 +26,7 @@ function MapArray() {
             You need to show 3 stars, but how?
         </p>
 
-        <Centered>
-            <img 
-                src={code} 
-                className='rounded-10 dBlock mb-50 fullImgMobile'
-                alt="js code" 
-            />
-        </Centered>
+        <Pic src={code} alt={'js code'} />
     </>
   )
 }
