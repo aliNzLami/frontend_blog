@@ -42,13 +42,18 @@ input {
     font-family: "IBM Plex Mono", monospace;
 }
 
+
+/* --------------------------- GENERAL --------------------------- */
+
+.video {
+    width: 600px;
+}
+
 @media (max-width: 768px) {
     .fullImgMobile {
         width: 100%;
     }
 }
-
-/* --------------------------- GENERAL --------------------------- */
 
 .header-font {
     font-family: "Orbitron", sans-serif;
@@ -426,4 +431,11 @@ footer a {
     font-weight: 500;
     font-size: 23px;
     font-family: "IBM Plex Mono", monospace;
+}
+
+@media (max-width: 768px) {
+    .artcileParagraph {
+        font-weight: 500;
+        font-size: 19px;
+    }
 }

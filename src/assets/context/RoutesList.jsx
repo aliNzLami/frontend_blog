@@ -1,6 +1,7 @@
 import React, { createContext } from "react";
 
 import Home from '../pages/Home/Home';
+const XP = React.lazy(() => import("../pages/Articles/XP/XP"))
 const ImgRatio = React.lazy(() => import("../pages/Articles/ImgRatio/ImgRatio"))
 const MapArray = React.lazy(() => import("../pages/Articles/MapArray/MapArray"))
 const ViteAndCRA = React.lazy(() => import("../pages/Articles/ViteAndCRA/ViteAndCRA"))
@@ -19,6 +20,17 @@ export const RoutesList = createContext();
 const RoutesListProvider = (props) => {
     const routesList = {
         home: { url: "/", element: <Home /> },
+        
+        
+        XP: { 
+            title: "Why This Blog? ⚡", 
+            subTitle: "Let's talk about the Y2K, the era I was born, Errrrrr",
+            time: '"Lifeline"', 
+            url: "/blog-brand", 
+            tag: '',
+            date:{year: 2000, month: 'OCT', day: '11'},
+            element: <XP /> 
+        },
         
         imgRatio: { 
             title: "Image Ratio", 
