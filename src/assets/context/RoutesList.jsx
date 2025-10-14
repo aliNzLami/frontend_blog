@@ -14,6 +14,7 @@ const GithubDeploymentError = React.lazy(() => import("../pages/Articles/GithubD
 const VideosNextJS = React.lazy(() => import("../pages/Articles/VideosNextJS/VideosNextJS"))
 const ImagesThreeJS = React.lazy(() => import("../pages/Articles/ImagesThreeJS/ImagesThreeJS"))
 const GLBFilesReact = React.lazy(() => import("../pages/Articles/GLB_Files/GLBFilesReact"))
+const CommonErrorsRTL = React.lazy(() => import("../pages/Articles/CommonErrorsRTL/CommonErrorsRTL"))
 
 
 export const RoutesList = createContext();
@@ -55,7 +56,7 @@ const RoutesListProvider = (props) => {
 
         viteWebpack: { 
             title: "Vite vs Webpack", 
-            subTitle: "My personal opinion about these two bundlers",
+            subTitle: "My personal opinion about these two bundlers.",
             time: '2', 
             url: "/vitevswebpack", 
             tag: 'js',
@@ -75,7 +76,7 @@ const RoutesListProvider = (props) => {
 
         mathRandom_badIdea: { 
             title: "Math.Random() Is a Bad Idea", 
-            subTitle: "If you are using math.random() in your JSX file, you are in trouble",
+            subTitle: "If you are using math.random() in your JSX file, you are in trouble.",
             time: '7', 
             url: "/mathRandom_badIdea", 
             tag: 'react',
@@ -85,7 +86,7 @@ const RoutesListProvider = (props) => {
 
         gitBranchProblem: { 
             title: "fatal: Not a valid object name: 'master'", 
-            subTitle: "Bad, on nerve, and exhausting error you could see from Git",
+            subTitle: "Bad, on nerve, and exhausting error you could see from Git.",
             time: '3', 
             url: "/git-branch-problem", 
             tag: 'github',
@@ -105,7 +106,7 @@ const RoutesListProvider = (props) => {
 
         fastOptimise: { 
             title: "Fastest Way to Optimise Your Web App", 
-            subTitle: "Before you go on hard refactoring phase, you can follow these steps",
+            subTitle: "Before you go on hard refactoring phase, you can follow these steps.",
             time: '5', 
             url: "/fast-optimise", 
             tag: 'react',
@@ -151,6 +152,16 @@ const RoutesListProvider = (props) => {
             tag: 'three',
             date:{year: 2025, month: 'Oct', day: '14'},
             element: <GLBFilesReact /> 
+        },
+
+        commonErrorsRTL: { 
+            title: "Common Errors in RTL", 
+            subTitle: "Prevent common errors in React Testing Library by these steps.",
+            time: '10', 
+            url: "/errors-rtl", 
+            tag: 'rtl',
+            date:{year: 2025, month: 'Oct', day: '14'},
+            element: <CommonErrorsRTL /> 
         },
     };
 
