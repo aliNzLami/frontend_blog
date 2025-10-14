@@ -13,6 +13,7 @@ const FastestOptimising = React.lazy(() => import("../pages/Articles/FastestOpti
 const GithubDeploymentError = React.lazy(() => import("../pages/Articles/GithubDeploymentError/GithubDeploymentError"))
 const VideosNextJS = React.lazy(() => import("../pages/Articles/VideosNextJS/VideosNextJS"))
 const ImagesThreeJS = React.lazy(() => import("../pages/Articles/ImagesThreeJS/ImagesThreeJS"))
+const GLBFilesReact = React.lazy(() => import("../pages/Articles/GLB_Files/GLBFilesReact"))
 
 
 export const RoutesList = createContext();
@@ -140,6 +141,16 @@ const RoutesListProvider = (props) => {
             tag: 'three',
             date:{year: 2025, month: 'Sep', day: '28'},
             element: <ImagesThreeJS /> 
+        },
+
+        "3D Files": { 
+            title: "3D Files in React", 
+            subTitle: "How to use .glb files in React Project?",
+            time: '7', 
+            url: "/glb-files-react", 
+            tag: 'three',
+            date:{year: 2025, month: 'Oct', day: '14'},
+            element: <GLBFilesReact /> 
         },
     };
 
